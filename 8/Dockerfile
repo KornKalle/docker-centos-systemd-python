@@ -13,7 +13,7 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
     /lib/systemd/system/basic.target.wants/* \
     /lib/systemd/system/anaconda.target.wants/*
 
-RUN dnf install -y python3
+RUN dnf install -y python3 ca-certificates
 
 VOLUME [ "/sys/fs/cgroup" ]
 
